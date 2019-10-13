@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Metodología</title>
+    <link rel="stylesheet" type="text/css" href="../../css/Met.css">
 </head>
 <body>
     <header>
-        Metodología
+        <img src="../../imgs/imagenLogo.jpg" alt="logo" width="960" height="450">
+        <h1>
+                Metodología
+        </h1>
+        
     </header>
     <nav>
         <ul>
@@ -21,18 +26,78 @@
         </ul>
     </nav>
     <section>
+        <h2>Sus partes</h2>
             <article>
+
+                <p>
+                    <dfn>Problemas de optimización.-</dfn>
+                        En un algoritmo genético, una población de soluciones candidatas (llamadas individuos, criaturas o fenotipos) a un problema de optimización se desarrolla hacia mejores soluciones. Cada solución candidata tiene un conjunto de propiedades (sus cromosomas o genotipos) que pueden ser mutados y alterados. Tradicionalmente, las soluciones se representan en binario como cadenas de ceros y unos, pero también son posibles otras codificaciones.
+                </p>
+                            <dfn>Inicialización.-</dfn>
+                                El tamaño de la población depende de la naturaleza del problema, pero normalmente contiene varios cientos o miles de posibles soluciones. A menudo, la población inicial se genera aleatoriamente, permitiendo toda la gama de posibles soluciones (el espacio de búsqueda). Ocasionalmente, las soluciones pueden ser "sembradas" en áreas donde es probable encontrar soluciones óptimas.
+                        </p>
+                        <p>
+                            <dfn>Selección.-</dfn>
+                            Durante cada generación sucesiva, una parte de la población existente se selecciona para criar una nueva generación. Las soluciones individuales se seleccionan a través de un proceso basado en la aptitud, donde las soluciones de acondicionamiento (como medido por una función de acondicionamiento físico) son típicamente más probables de ser seleccionadas. Ciertos métodos de selección evalúan la aptitud de cada solución y preferentemente seleccionan las mejores soluciones. Otros métodos califican solo a una muestra aleatoria de la población, ya que el proceso anterior puede llevar mucho tiempo.
+                        </p>
+                        <p>
+                                <dfn>Operadores genéticos.-</dfn>
+                                El siguiente paso es generar una población de segunda generación, de soluciones de las seleccionadas a través de una combinación de operadores genéticos: entrecruzamiento cromosómico (también llamado crossover o recombinación) y mutación.
+                        </p>
+                        <p>
+                            <dfn>Terminación</dfn>
+                            Este proceso generacional se repite hasta que se alcanza una condición de terminación. Las condiciones de terminación comunes son:
+                            <li>
+                                    Se encuentra una solución que satisface los criterios mínimos.
+                            </li>
+                            <li>
+                                    Se alcanza un número fijado de generaciones.
+                            </li>
+                            <li>
+                                    Se alcanza el presupuesto asignado (tiempo de cálculo / dinero).
+                            </li>
+                            <li>
+                                    La aptitud de la solución de la clasificación más alta está alcanzando o ha alcanzado una meseta tal que las sucesivas iteraciones ya no producen mejores resultados.
+                            </li>
+                            <li>
+                                
+                                Inspección manual.
+                            </li>
+                            <li>
+                                
+                                Combinaciones de las anteriores.
+                            </li>
+
+                        </p>
+                        
             </article>
-    
             <aside>
+                    Por ejemplo, en el problema de la mochila se quiere maximizar el valor total de los objetos que se pueden poner en una mochila de alguna capacidad fija. Una representación de una solución puede ser una matriz de bits, donde cada bit representa un objeto diferente, y el valor del bit (0 o 1) representa si el objeto está o no en la mochila. No todas las representaciones son válidas, ya que el tamaño de los objetos puede exceder la capacidad de la mochila. La aptitud de la solución es la suma de valores de todos los objetos en la mochila si la representación es válida, o 0 de lo contrario.
+            </aside>
+          
+            <aside>
+                <p>
+                        La función de fitness se define sobre la representación genética y mide la calidad de la solución representada. 
+                </p>
+                    
+                    <img src="../../imgs/ejemplo_fitness.png" alt="función fitness" width="320" height="220">
+                    <p>Fig-1- Modelo:
+                        cuanto mas se parezca un individuo a este modelo, mayor será su fitness
+                    </p>
+                    <p>
+                        Evaluación: 
+                        la función de fitness evalúan todos los individuos y calcula cuántos númers tienen en común con el modelo
+                    </p>
             </aside>
             
-            <aside>
-            </aside>
         </section>
     
-        <section>
+        <section class="seccion2">
+                <h3>Ejemplo de aplicación</h3>
             <aside>
+                    
+                    la dinámica de fluidos computacional se usa para determinar la resistencia al aire de un vehículo cuya forma se codifica como fenotipo
+                    <img src="../../imgs/auto.jpg" alt="auto">
     
             </aside>
         </section>
