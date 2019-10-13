@@ -7,12 +7,16 @@
     <title>Limitaciones</title>
 </head>
 <body>
-    <header>Limitaciones</header>
+    <header>
+        <h1>Limitaciones</h1>
+        <img src="../../imgs/images.jpg" alt="Limitaciones">
+    </header>
     <nav>
         <ul>
                 <li> <a href="../../index.html">Introducción</a> </li>
                 <li> <a href="../Dominios de problemas/P1.html">Dominios de problemas</a></li>
                 <li> <a href="../La hipotesis del bloque de construccion/P2.html">La hipotesis del bloque de construcción</a></li>
+                <li> <a href="../Limitaciones/P3.html">Limitaciones</a></li>
                 <li> <a href="../Metodologia/P4.html">Metodología</a></li>
                 <li> <a href="../Variantes/P5.html">Variantes</a> </li>
 
@@ -20,10 +24,37 @@
     </nav>
     <section>
             <article>
+                <p>
+                        Existen limitaciones en el uso de un algoritmo genético en comparación con algoritmos de optimización alternativos:
+                </p>
+                <ul>
+                        La evaluación repetida de la función de aptitud para problemas complejos es a menudo el segmento más prohibitivo y limitante de los algoritmos evolutivos artificiales. Encontrar la solución óptima a problemas tridimensionales y multimodales complejos requiere a menudo evaluaciones de la función de acondicionamiento muy costosas. En problemas del mundo real tales como problemas de optimización estructural, una evaluación de una sola función puede requerir varias horas a varios días de simulación completa. Métodos típicos de optimización no pueden hacer frente a este tipo de problemas. En este caso, puede ser necesario renunciar a una evaluación exacta y utilizar una aptitud aproximada que sea computacionalmente eficiente. Es evidente que la amalgama de modelos aproximados puede ser uno de los enfoques más prometedores para usar de manera convincente AG para resolver complejos problemas de la vida real.
+                </ul>
+                <h2>Complejidad</h2>
+                <ul>
+                        Los algoritmos genéticos no se adecuan bien a la complejidad. Es decir, cuando el número de elementos expuestos a la mutación es grande, a menudo hay un aumento exponencial en el tamaño del espacio de búsqueda. Esto hace extremadamente difícil el uso de la técnica en problemas tales como el diseño de un motor, una casa o un avión. Con el fin de hacer que tales problemas sean tratables a la búsqueda evolutiva, deben ser descompuestos en la representación más simple posible. Por lo tanto, normalmente vemos algoritmos evolutivos que codifican diseños para álabes de ventilador en lugar de motores, formas de construcción en lugar de planes detallados de construcción y perfiles aerodinámicos en lugar de diseños completos de aeronaves. El segundo problema de la complejidad es la cuestión de cómo proteger partes que han evolucionado para representar buenas soluciones de una mutación destructiva adicional, particularmente cuando su evaluación de la aptitud requiere que se combinen bien con otras partes.
+                </ul>
+                <h3>Soluciones</h3>
+                <ul>
+                        La solución "mejor" es sólo en comparación con otras soluciones. Como resultado, el criterio de parada no está claro en cada problema. 
+                </ul>
+                <h4>Convergencia</h4>
+                <ul>
+                        En muchos problemas, los AG pueden tener una tendencia a converger hacia óptima local o incluso puntos arbitrarios en lugar del óptimo global del problema. Esto significa que no "sabe cómo" sacrificar la aptitud a corto plazo para ganar aptitud a más largo plazo. La probabilidad de que esto ocurra depende de la forma del paisaje de fitness: ciertos problemas pueden proporcionar un ascenso fácil hacia un óptimo global, otros pueden hacer que sea más fácil para la función encontrar la óptima local. Este problema puede ser aliviado mediante el uso de una función de fitness diferentes, el aumento de la tasa de mutación, o mediante el uso de técnicas de selección que mantienen una diversa población de soluciones, aunque el almuerzo libre teorema  demuestra que no hay una solución general A este problema. Una técnica común para mantener la diversidad es imponer una "pena de nicho", en la cual, cualquier grupo de individuos de similar similitud (radio de nicho) tiene una penalización agregada, lo que reducirá la representación de ese grupo en generaciones posteriores, permitiendo otros) A mantener en la población. Este truco, sin embargo, puede no ser eficaz, dependiendo del paisaje del problema. Otra técnica posible sería simplemente reemplazar parte de la población con individuos generados al azar, cuando la mayoría de la población es demasiado similar entre sí. La diversidad es importante en los algoritmos genéticos (y en la programación genética) porque cruzar una población homogénea no genera nuevas soluciones. En las estrategias de evolución y la programación evolutiva, la diversidad no es esencial debido a una mayor dependencia de la mutación.
+                    
+                </ul>
             </article>
     
             <aside>
+                <img src="../../imgs/conv.jpg" alt="convergencia">
+                <p>
+                    Fig-4 Evolución del mejor individuo para el algoritmo genético de código binario
+                </p>
             </aside>
+            <img src="../../imgs/Convergencia-del-Algoritmo-con-los-parametros-seleccionados.png" alt="convergencia de algoritmo" width="425" height="318">
+            <p>
+                Fig-5 Convergencia del algoritmo con los parámetros seleccionados
+            </p>
             
             <aside>
             </aside>

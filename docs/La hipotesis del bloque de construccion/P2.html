@@ -8,12 +8,14 @@
 </head>
 <body>
     <header>
-            La hipótesis del bloque de construcción
+        <h1>La hipótesis del bloque de construcción</h1>
+            <img src="../../imgs/descarg.jpg" alt="Hipotesis">
     </header>
     <nav>
         <ul>
                 <li> <a href="../../index.html">Introducción</a> </li>
                 <li> <a href="../Dominios de problemas/P1.html">Dominios de problemas</a></li>
+                <li><a href="../La hipotesis del bloque de construccion/P2.html">La hipótesis del bloque de construcción</a> </li>
                 <li> <a href="../Limitaciones/P3.html">Limitaciones</a></li>
                 <li> <a href="../Metodologia/P4.html">Metodología</a></li>
                 <li> <a href="../Variantes/P5.html">Variantes</a> </li>
@@ -21,20 +23,70 @@
     </nav>
     <section>
             <article>
+                <p>
+                        Los algoritmos genéticos son sencillos de implementar, pero su comportamiento es difícil de entender. En particular, es difícil entender por qué estos algoritmos con frecuencia tienen éxito en la generación de soluciones de alta aptitud cuando se aplica a problemas prácticos. La hipótesis del bloque de construcción (BBH) consiste en:
+                </p>
+                <p>
+                    <ul>
+                            Una descripción de una heurística que realiza la adaptación identificando y recombinando "bloques de construcción", es decir, orden bajo, esquemas de definición de longitud baja con una aptitud superior al promedio.
+                    </ul>
+                </p>
+                <p>
+                    <ul>
+                            Una hipótesis de que un algoritmo genético realiza adaptación implícita y eficientemente implementando esta heurística.
+                            
+                    </ul>
+                </p>
+                <p>
+                    <dfn>La heurística según Goldberg,</dfn>
+                        los esquemas cortos, de bajo orden y de alto ajuste son muestreados, recombinados (cruzados) y remuestreados para formar cadenas de aptitud potencialmente más alta. En cierto modo, al trabajar con estos esquemas particulares (los bloques de construcción), hemos reducido la complejidad de nuestro problema. En lugar de construir cadenas de alto rendimiento mediante el intento de todas las combinaciones concebibles, construimos mejores y mejores cadenas de las mejores soluciones parciales de los últimos muestreos.
+                </p>
+                <p>
+                        Debido a que los esquemas altamente ajustados de baja definición de longitud y bajo orden desempeñan un papel tan importante en la acción de los algoritmos genéticos, ya les hemos dado un nombre especial: bloques de construcción. Como un niño crea magníficas fortalezas a través de la disposición de bloques simples de madera, también lo hace un algoritmo genético buscando acercarse a un rendimiento óptimo a través de la yuxtaposición de corto, de bajo orden, de alto rendimiento esquemas, o bloques de construcción.
+                </p>
+                <p>
+                        A pesar de la falta de consenso en cuanto a la validez de la hipótesis de bloques de construcción, se ha evaluado y utilizado como referencia a lo largo de los años. Muchas estimaciones de los algoritmos de distribución, por ejemplo, se han propuesto en un intento de proporcionar un entorno en el que la hipótesis se cumpliría. Aunque se han reportado buenos resultados para algunas clases de problemas, todavía queda escepticismo con respecto a la generalidad y / o practicidad de la hipótesis del bloque de construcción como explicación de la eficiencia de los AG. De hecho, hay una cantidad razonable de trabajo que intenta entender sus limitaciones desde la perspectiva de la estimación de los algoritmos de distribución.
+                </p>
             </article>
     
             <aside>
+                <img src="../../imgs/Goldenberg.jpeg" alt="Goldberg">
+                <p>
+                        <strong>David Edward Goldberg</strong>  (nacido el 26 de septiembre de 1953) es un informático estadounidense, ingeniero civil y profesor en el departamento de Ingeniería de Sistemas Industriales y Empresariales (IESE) de la Universidad de Illinois en Urbana-Champaign y es más conocido por su trabajo en El campo de los algoritmos genéticos. Es el director del Laboratorio de Algoritmos Genéticos de Illinois (IlliGAL) y el científico principal de Nextumi Inc. Es el autor de Algoritmos Genéticos en Búsqueda, Optimización y Aprendizaje Automático , uno de los libros más citados en informática. 
+                </p>
             </aside>
-            
+                
             <aside>
+                <img src="../../imgs/esquema.jpeg" alt="Esquema">
+                <p>
+                    Fig-2 Evolución de la población
+                </p>
+                <p>
+                        En la Fig-2 se muestra el esquema del funcionamiento de un  <abbr title="Algoritmo Evolutivo">EA</abbr> típico. Como puede verse, un  <abbr title="Algoritmo Evolutivo">EA</abbr>
+                        procede de forma iterativa mediante la evolución de los individuos pertenecientes a la población actual.
+                        Esta evolución es normalmente consecuencia de la aplicaci´on de operadores estocásticos de variación
+                        sobre la población, como la selecci´on, recombinación y mutación, con el fin de calcular una generación
+                        completa de nuevos individuos.
+
+                </p>
+                    
             </aside>
         </section>
     
         <section>
             <aside>
-    
+                <p>
+                        Comunicación en red, en la cual no existe una jerarquía entre las subpoblaciones, mandando todas y cada una de ellas sus h3 (h3 > 1) mejores individuos al resto de las subpoblaciones. Fig-3
+                </p>
+                <img src="../../imgs/esquema2.jpg" alt="Esquema 2">
+                    <p>
+                      Fig-3 Algorimto Genético Paralelo, modelo de islas,comunicación en red  
+                    </p>
+
+                
             </aside>
-        </section>
+        </section> <br>
+
         <footer>
                 Christian Mauricio Yunga <br>
                 Universidad Politécnica Salesiana <br>
