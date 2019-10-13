@@ -89,7 +89,7 @@ section{
 }
  article{
   
-    width: 350px;
+    width: 400px;
     float: left;
     
 }
@@ -98,7 +98,7 @@ aside {
    
    width: 200px;
    margin-left: 350px;
-   margin: 20px;
+   margin: 2px;
    float: right;
   
 
@@ -122,9 +122,7 @@ th, td{
     padding: 15px;
 }
 
-table{
-    width: 100%;
-}
+
 td{
     text-align: left;
 }
@@ -134,4 +132,7 @@ td{
 }
 iframe{
     padding: 25px;
+}
+table{
+    width: 100%;
 }
