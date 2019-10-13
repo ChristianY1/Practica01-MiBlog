@@ -13,7 +13,7 @@ h1{
     font-size: 2.2em;
     
 }
-h2,h3{
+h2,h3, h4{
     color: white;
     background-color: rgb(131, 147, 235);
     font-size: 1.5em;
@@ -131,4 +131,7 @@ td{
 
 .centro, .titulo{
     text-align: center;
+}
+iframe{
+    padding: 25px;
 }
