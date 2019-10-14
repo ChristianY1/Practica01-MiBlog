@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eS">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Técnicas Relacionadas</title>
+    <link rel="stylesheet" type="text/css" href="../../css/TR.css">
+</head>
+<body>
+    <header>
+        <h1>Técnicas Relacionadas</h1>
+    </header>
+    <nav>
+        <ul>
+                <li> <a href="../../index.html">Introducción</a></li>
+                <li><a href="../Dominios de problemas/P1.html">Dominios de problemas</a> </li>
+                <li> <a href="../La hipotesis del bloque de construccion/P2.html">La hipotesis del bloque de construcción</a> </li>
+                <li> <a href="../Limitaciones/P3.html">Limitaciones</a></li>
+                <li> <a href="../Metodologia/P4.html">Metodología</a></li>
+                <li> <a href="../Variantes/P5.html">Variantes</a> </li>
+                <li><a href="../Tecnicas Relacionadas/P6.html">Técnicas Relacionadas</a></li>
+        </ul>
+    </nav>
+    <section>
+        <header >
+            <nav class="navegacion">
+                    <ul>
+                            <li><a href="P6.html#art1">Algoritmos Evolutivos</a></li>
+                            <li><a href="P6.html#art2">Inteligencia de enjambre</a></li>
+                            <li><a href="P6.html#art3">Otros algoritmos evolutivos de computación</a></li>
+                    </ul>
+
+            </nav>
+            
+            
+            
+        </header>
+        <article id="art1">
+            <h2> Algoritmos Evolutivos</h2>
+            <p>
+                    Los algoritmos evolutivos son un sub-campo de la computación evolutiva.
+
+            </p>
+            <p>
+                    Las estrategias de evolución <cite>(ES, véase Rechenberg, 1994)</cite> evolucionan a los individuos por medio de la mutación y la recombinación intermedia o discreta. Los algoritmos ES están diseñados especialmente para resolver problemas en el dominio de valor real. Utilizan la autoadaptación para ajustar los parámetros de control de la búsqueda. La des-aleatorización de la auto-adaptación ha llevado a la actual Covariance Matrix Adaptation Evolution Strategy (CMA-ES).
+            </p>
+            <p>
+                    La programación evolutiva (EP) implica poblaciones de soluciones con mutación y selección y representaciones arbitrarias. Utiliza la autoadaptación para ajustar los parámetros, y puede incluir otras operaciones de variación, como combinar información de múltiples padres.
+
+            </p>
+            <p>
+                    La estimación del algoritmo de distribución (EDA) sustituye a los operadores tradicionales de reproducción por operadores guiados por modelos. Estos modelos son aprendidos de la población empleando técnicas de aprendizaje automático y representados como Modelos Gráficos Probabilísticos, a partir de los cuales se pueden muestrear nuevas solucioneso generadas a partir de entrecruzamiento cromosómico guiado.
+            </p>
+        </article>
+        <article id="art2">
+            <h3>Inteligencia de enjambre</h3>
+            <p>
+                    La optimización de la colonia de hormigas (ACO) utiliza muchas hormigas (o agentes) equipadas con un modelo de feromonas para recorrer el espacio de la solución y encontrar áreas productivas locales. Se considera una estimación del algoritmo de distribución.
+            </p>
+            <p>
+                    La optimización de enjambre de partículas (PSO) es un método computacional para la optimización multiparamétrica que también utiliza un enfoque basado en la población. Una población (enjambre) de soluciones candidatas (partículas) se mueve en el espacio de búsqueda, y el movimiento de las partículas es influenciado tanto por su posición mejor conocida como por la posición global más conocida del enjambre. Al igual que los algoritmos genéticos, el método de PSO depende del intercambio de información entre los miembros de la población. En algunos problemas, el PSO es a menudo más eficiente desde el punto de vista computacional que los AG, especialmente en problemas sin restricciones con variables continuas.
+            </p>
+
+        </article>
+        <article id="art3">
+            <h4>Otros algoritmos evolutivos de computación</h4>
+            <p>
+                    El algoritmo Memetic (MA), a menudo llamado algoritmo genético híbrido, entre otros, es un método basado en la población en el cual las soluciones también están sujetas a fases de mejora local. La idea de los algoritmos meméticos, que a diferencia de los genes, pueden adaptarse. En algunas áreas problemáticas se demuestra que son más eficientes que los algoritmos evolutivos tradicionales. 
+            </p>
+            <p>
+                    Los algoritmos bacteriológicos (BA) están inspirados en la ecología evolutiva y, más concretamente, en la adaptación bacteriológica. La ecología evolutiva es el estudio de los organismos vivos en el contexto de su entorno, con el objetivo de descubrir cómo se adaptan. Su concepto básico es que en un ambiente heterogéneo, no hay un individuo que se ajuste a todo el entorno. Por lo tanto, uno tiene que razonar a nivel de la población. También se cree que los BA podrían aplicarse con éxito a complejos problemas de posicionamiento (antenas para teléfonos celulares, planificación urbana, etc.) o minería de datos
+            </p>
+
+        </article>
+    </section>
+
+    <section>
+        <header>
+            <nav class="navegacion">
+                    <ul>
+                            <li><a href="P6.html#art4">Otros métodos metaheurísticos</a></li>
+                            <li><a href="P6.html#art5">Otros métodos de optimización estocástica</a></li>
+                            <li><a href="P6.html#art6">Ejemplo</a></li>
+                    </ul>
+            </nav>
+            
+        </header>
+        <article id="art4">
+            <h5>Otros métodos metaheurísticos</h5>
+            <p>
+                    El recocido simulado (SA) es una técnica de optimización global relacionada que atraviesa el espacio de búsqueda mediante la prueba de mutaciones aleatorias en una solución individual. Una mutación que aumenta la aptitud siempre se acepta. Una mutación que disminuye la aptitud se acepta probabilisticamente basándose en la diferencia en aptitud y un parámetro decreciente de la temperatura. En la jerga del SA, se habla de buscar la energía más baja en lugar de la aptitud máxima. El SA también se puede utilizar dentro de un algoritmo GA estándar comenzando con una tasa relativamente alta de mutación y disminuyendo a lo largo del tiempo a lo largo de un calendario dado.
+            </p>
+            <p>
+                    La búsqueda tabú (TS) es similar al recocido simulado en que ambos atraviesan el espacio de la solución probando mutaciones de una solución individual. Mientras que el recocido simulado genera sólo una solución mutada, la búsqueda de tabú genera muchas soluciones mutadas y se mueve a la solución con la energía más baja de las generadas. Con el fin de evitar bucles y fomentar un mayor movimiento a través del espacio de solución, se mantiene una lista tabú de soluciones parciales o completas. Está prohibido pasar a una solución que contiene elementos de la lista tabú, que se actualiza a medida que la solución atraviesa el espacio de la solución.
+            </p>
+        </article>
+        <article id="art5">
+            <h6>Otros métodos de optimización estocástica</h6>
+            <p>
+                    El método de entropía cruzada (CE) genera soluciones de candidatos mediante una distribución de probabilidad parametrizada. Los parámetros se actualizan mediante la minimización de la entropía cruzada, para generar mejores muestras en la siguiente iteración.
+            </p>
+            <p>
+                    La optimización de búsqueda reactiva (RSO) aboga por la integración de técnicas de aprendizaje sub-simbólicas en la heurística de búsqueda para resolver problemas complejos de optimización. La palabra reactiva sugiere una respuesta rápida a los eventos durante la búsqueda a través de un bucle interno de retroalimentación en línea para el autoajuste de parámetros críticos. Las metodologías de interés para la búsqueda reactiva incluyen el aprendizaje mecánico y las estadísticas, en particular el aprendizaje por refuerzo, el aprendizaje activo o de consulta, las redes neuronales y las metaheurísticas. 
+            </p>
+        </article>
+        <article id="art6">
+            <h6>Ejemplo</h6>
+            <p>
+                    Considérese el problema de insertar signos de suma o resta entre los dígitos 9 8 7 6 5 4 3 2 1 para construir una expresión cuyo valor sea 100; no se vale añadir, retirar o desordenar a los dígitos. Una solución puede ser 98+7-6+5-4+3-2-1 porque, al evaluar su valor, da exactamente 100. 
+            </p>
+            <p>
+                    Hay 9 sitios (uno antes de cada dígito) donde colocar un signo de más (+), un signo de menos (-) o nada (lo cual implicará que dos o más dígitos se unan para formar cantidades mayores; como 98 en el ejemplo anterior, donde se puso "nada" antes del 9 y antes del 8). Existen, por lo tanto, 3 a la 9 = 19683 expresiones distintas (por combinatoria) entre las cuales buscar aquellas con la suma deseada. Es posible desarrollar un algoritmo exhaustivo que las genere todas y, dada la relativa pequeñez de este ejemplo, determinar completamente todas las posibles configuraciones. Sin embargo, este reto se presta para ilustrar los pasos de un proceso genético.
+            </p>
+
+
+        </article>
+    </section>
+    <footer>
+            Christian Mauricio Yunga <br>
+            Universidad Politécnica Salesiana <br>
+            E-mail: <a href="mailto:ychristian@est.ups.edu.ec">ychristian@est.ups.edu.ec</a> <br>
+            Teléfono:<a href="tel:0939514731">0939514731</a> <br>
+            © Todos los derechos reservados <br>
+        </footer>
+    
+</body>
+</html>
