@@ -4,7 +4,7 @@
 4) logo en la etiqueta header
 5) hipervinculo mailto para correo y tel para telefono
 Tema informativo: Algoritmos Genéticos
-Número de páginas: 8
+Número de páginas: 7
 las páginas están organizadas en carpetas teniendo el siguiente orden:
 
 Menú de navegación a la izquierda y estructura de la página basada en los requerimientos de la práctica, logo dentro de <header>  e información del estudiante en el footer junto con el símbolo de copyritgth, todas las paginas tienen <section>, <article> y <aside>
